@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style>
+table, th, td {
+    border: 1px solid black;
+}
+</style>
+</head>
+<body>
+ 
+ <script src="simpleCart.js"></script>
+	<script>
+		/*globals simpleCart */
+		simpleCart({
+			checkout: { 
+				type: "PayPal" , 
+				email: "noklatallc@gmail.com" 
+			}
+		});	
+	</script>
+	
+	<div class="simpleCart_shelfItem">
+    <img src="http://scene7.zumiez.com/is/image/zumiez/pdp_hero/40s-%26-Shorties-Double-Cup-Black-Dad-Hat-_274610-front-US.jpg" class="item_thumb" />
+    <h2 class="item_name">ABSL dad hats</h2>
+ 	<select class="item_size">
+        <option value="black"> black </option>
+        <option value="white"> white </option>
+        <option value="grey"> grey </option>
+    </select>
+    <input type="text" value="1" class="item_Quantity">
+    <span class="item_price">$20</span>
+	<a class="item_add" href="javascript:;"> Add to Cart </a>
+</div>
+	
+<script src="simpleCart.js"></script>
+<script>
+simpleCart({
+	checkout: { 
+		type: "PayPal" , 
+		email: "noklatallc@gmail.com" 
+	},
+	tax: 		.00,
+	currency: 	"USD"
+});
+</script>
+	
+<a href="home.html">home</a>
+<a href="contact.html">contact</a>
+<a href="cart.html">cart</a>				  
+		
+</body>
+</html>
